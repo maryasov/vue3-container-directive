@@ -1,0 +1,59 @@
+{
+  "name": "vue3-container-directive",
+  "version": "0.0.1",
+  "description": "Container query helper directive",
+  "keywords": [
+    "container",
+    "directive",
+    "vue3",
+    "vue"
+  ],
+  "homepage": "https://github.com/maryasov/vue3-container-directive",
+  "bugs": {
+    "url": "https://github.com/maryasov/vue3-container-directive/issues"
+  },
+  "license": "MIT",
+  "author": "maryasov",
+  "files": [
+    "dist/*.js",
+    "dist/*.css"
+  ],
+  "main": "./dist/vue3-container-directive.umd.js",
+  "module": "./dist/vue3-container-directive.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-container-directive.es.js",
+      "require": "./dist/vue3-container-directive.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maryasov/vue3-container-directive.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "pub": "npm publish --access public"
+  },
+  "dependencies": {
+    "vue": "^3.3.13"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.2",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/shared": "^3.3.13",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "@vueuse/core": "^10.7.0",
+    "sass": "^1.69.5",
+    "vue-tsc": "^0.34.7"
+  },
+  "peerDependencies": {
+    "vue": ">=3.3.13"
+  }
+}
